@@ -26,7 +26,6 @@ public class Client {
             while (true) {
                 msg = scanner.nextLine();
                 out.println(msg);
-                Logger.log(msg);
                 if ("exit".equals(msg)) break;
 
                 Thread readMsg = new Thread(new Runnable() {
